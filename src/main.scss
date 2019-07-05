@@ -1,0 +1,19 @@
+$primary: cadetblue;
+$secondary: #191919;
+
+@mixin banner {
+  background: $primary;
+  font-size: 1.5em;
+}
+
+body {
+  color: white;
+  background: $secondary;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header,
+.footer {
+  @include banner;
+}
